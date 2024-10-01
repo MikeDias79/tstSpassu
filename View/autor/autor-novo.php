@@ -11,7 +11,7 @@ Novo Autor
 
 <div class="form-group">
         <label>Nome</label>
-        <input type="text" name="Nome" value="" class="form-control" placeholder="Nome do Autor" data-validacion-tipo="requerido|min:20" />
+        <input type="text" name="Nome" value="" class="form-control" placeholder="Nome do Autor"   pattern="[A-Za-z0-9 ]+" required />
     </div>
     
     <hr />

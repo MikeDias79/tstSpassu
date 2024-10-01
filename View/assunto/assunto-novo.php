@@ -11,8 +11,7 @@ Novo Assunto
 
 <div class="form-group">
         <label>Descrição</label>
-        <input type="text" name="Descricao" value="" class="form-control" placeholder="Descrição do Assunto" data-validacion-tipo="requerido|min:20" />
-    </div>
+        <input type="text" name="Descricao" value="" class="form-control" placeholder="Descrição do Assunto"  pattern="[A-Za-z0-9 ]+" required />
     
     <hr />
 

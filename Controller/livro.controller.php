@@ -60,7 +60,7 @@ class LivroController{
         $pvd->Preco = $_REQUEST['Preco'];
         $pvd->CodAs = $_REQUEST['CodAs'];
         $this->model->Registrar($pvd);
-        header('Location: index.php');
+        header('Location: index.php?c=livro');
     }
 
     public function AddAutorLivro(){
@@ -81,12 +81,12 @@ class LivroController{
         $pvd->CodAs = $_REQUEST['CodAs'];
         $pvd->Cod = $_REQUEST['Cod'];
         $this->model->Atualizar($pvd);
-        header('Location: index.php');
+        header('Location: index.php?c=livro');
     }
 
     public function Eliminar(){
         $this->model->Eliminar($_REQUEST['Cod']);
-        header('Location: index.php');
+        header('Location: index.php?c=livro');
     }
 
 

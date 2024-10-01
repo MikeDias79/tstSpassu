@@ -13,12 +13,12 @@
 
     <div class="form-group">
         <label>Titulo</label>
-        <input type="text" name="Titulo" value="<?php echo $pvd->Titulo; ?>" class="form-control" placeholder="Titulo do Livro - Apenas Letras e Numeros" required pattern="[A-Za-z\s]+"/>
+        <input type="text" name="Titulo" value="<?php echo $pvd->Titulo; ?>" class="form-control" placeholder="Titulo do Livro - Apenas Letras e Numeros" required pattern="[A-Za-z0-9 ]+"/>
     </div>
 
     <div class="form-group">
         <label>Editora</label>
-        <input type="text" name="Editora" value="<?php echo $pvd->Editora; ?>" class="form-control" placeholder="Nome da Editora - Apenas Letras e Numeros" required   />
+        <input type="text" name="Editora" value="<?php echo $pvd->Editora; ?>" class="form-control" placeholder="Nome da Editora - Apenas Letras e Numeros" required   pattern="[A-Za-z0-9 ]+"/>
     </div>
 
     <div class="form-group">
@@ -39,24 +39,24 @@
 
     <div class="form-group">
         <label>Assunto</label>
-            <Select name="CodAs" class="form-control">
+            <Select name="CodAs" class="form-control"  required >
                 <?php foreach($this->model->ListaAssunto() as $r): ?>
                     <option value="<?php echo $r->CodAs;?>"><?php echo $r->Descricao;?></option>
                 <?php endforeach; ?>
             </Select>
         </td>
     </div>
-
+<!--
     <div class="form-group">
         <label>Autor</label>
-            <Select name="CodAu" class="form-control">
+            <Select name="CodAu" class="form-control"  required >
                 <?php foreach($this->model->ListaAutor() as $r): ?>
                     <option value="<?php echo $r->CodAu;?>"><?php echo $r->Nome;?></option>
                 <?php endforeach; ?>
             </Select>
         </td>
     </div>
-
+                -->
     <hr />
 
     <div class="text-right">
