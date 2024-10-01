@@ -1,2 +1,1 @@
-# tstSpassu
-Teste Spassu Tecnologia - 2024
+Teste do Marco Aurelio Dias para Spassu Consultoria
